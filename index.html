@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head> 
+        <meta charset="UTF-8"> <!--인코딩 방식: 세계 표준 인코딩 방식-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--익스플로러를 이용한다면 최신 버전 엣지로 화면 보여줌--> 
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"> <!--디바이스 종류별로 화면 출력 방식 지정-->
+        <!--viewport가 있어야 반응형 웹 페이지 제작할 때 모바일 화면에 결과물 출력이 가능-->
+        <title> GEN.G Cards </title> 
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body>
+        <div id = "wrap">
+            <div id = "top">
+                <!-- 상단 메뉴 -->
+                <div id="menu-bar">
+                    <div id="logo">
+                        <a href="index.html"><img src="/html/img/logo.png" alt="로고" /></a>
+                    </div>
+                    <ul id="menu-items">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">마이카드</a></li>
+                    </ul>
+                </div>
+
+                <!-- 홈 메뉴 (메뉴 아래) -->
+                <div id="menu-bar2">
+                    <ul id="left-menu">
+                        <li>
+                            <a href="geng.html">젠지</a>
+                            <ul class="submenu">
+                                <li><a href="geng.html">로스터</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">스프링</a>
+                            <ul class="submenu">
+                                <li><a href="https://youtu.be/olZUX3iPBNY?si=TDt5rkzbgDdGCUKk">정규</a></li>
+                                <li><a href="https://youtu.be/KPuPV3sSWyo?si=ho5hPxtkq7JIJeU5">우승</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MSI</a>
+                            <ul class="submenu">
+                                <li><a href="https://youtu.be/v3P5UgUmNmw?si=IG4d3M3SwGYnCPb_">우승</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">서머</a>
+                            <ul class="submenu">
+                                <li><a href="https://youtu.be/WqlVzVY8Nkc?si=pOUHG_xCHj8O3Fve">정규</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "header">
+                <h1><marquee direction = "left" behavior = "scroll" scrolldelay = "0.0000001">
+                    GEN.G ESPORTS CARDS 젠지 이스포츠 카드
+                    GEN.G ESPORTS CARDS 젠지 이스포츠 카드</marquee></h1>
+            </div>
+
+            <div class = "carddeck">
+                <div class = "deckbox">
+                    <div class = "box"></div>
+                    <div class = "box"></div>
+                    <div class = "box"></div>
+                    <div class = "box"></div>
+                    <div class = "box"></div>
+                    <div class = "box"></div>
+                </div>
+                <!-- Reset 버튼 추가 -->
+                <button id="reset-button">리셋</button>
+            </div>
+
+            <section class = "spring section">
+                <h2>SPRING SEASON</h2>
+                <div class = "card-container">
+                <!--첫번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/kiin_card.png');"></div>
+                    </div>
+                    
+                    <!--두번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/canyon_card.png');"></div>
+                    </div>
+
+                    <!--세번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/chovy_card.png');"></div>
+                    </div>
+
+                    <!--네번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/peyz_card.png');"></div>
+                    </div>
+
+                    <!--다섯번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/lehends_card.png');"></div>
+                    </div>
+
+                    <!--여섯번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/geng_card.png');"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "msi section">
+                <h2>MSI</h2>
+                <div class = "card-container">
+                    <!--첫번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/kiin_msi_card.png');"></div>
+                    </div>
+                    
+                    <!--두번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/canyon_msi_card.png');"></div>
+                    </div>
+
+                    <!--세번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/chovy_msi_card.png');"></div>
+                    </div>
+
+                    <!--네번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/peyz_msi_card.png');"></div>
+                    </div>
+
+                    <!--다섯번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/lehends_msi_card.png');"></div>
+                    </div>
+
+                    <!--여섯번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/geng_msi_card.png');"></div>
+                    </div>
+
+                    <!--일곱번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/geng_msi2_card.png');"></div>
+                    </div>
+
+                    <!--여덟번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/geng_msi3_card.png');"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "summer section">
+                <h2>SUMMER SEASON</h2>
+                <div class = "card-container">
+                    <!--첫번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/kiin_summer_card.png');"></div>
+                    </div>
+                    
+                    <!--두번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/canyon_summer_card.png');"></div>
+                    </div>
+
+                    <!--세번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/chovy_summer_card.png');"></div>
+                    </div>
+
+                    <!--네번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/peyz_summer_card.png');"></div>
+                    </div>
+
+                    <!--다섯번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/lehends_summer_card.png');"></div>
+                    </div>
+
+                    <!--여섯번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/geng_summer_card.png');"></div>
+                    </div>
+
+                    <!--일곱번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/geng_summer2_card.png');"></div>
+                    </div>
+
+                    <!--여덟번째 카드 컨테이너-->
+                    <div class = "container">
+                        <div class = "overlay"></div>
+                        <div class = "card" style="background-image: url('/html/img/geng_summer3_card.png');"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--*****************************************************************************************-->
+        <script>
+            // 카드가 확대되었는지 여부를 추적
+            let isExpanded = false;
+            let expandedCard = null;  // 현재 확대된 카드를 추적
+
+            // 모든 컨테이너에 대해 같은 효과 적용
+            document.querySelectorAll('.container').forEach(function(container){
+                var overlay = container.querySelector('.overlay');
+
+            // 모든 컨테이너 적용 전
+            // var container = document.querySelector('.container')
+            // var overlay = document.querySelector('.overlay')
+
+            container.addEventListener('mousemove', function(e){
+                if (!isExpanded) {  // 확대된 상태가 아니면 효과 적용
+                    var x = e.offsetX
+                    var y = e.offsetY
+                    var rotateY = -1/5 * x + 20
+                    var rotateX = 4/30 * y - 20
+                    
+                    overlay.style = `background-position : ${x/5 + y/5}%`
+                    container.style = `transform : perspective(350px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                }
+            });
+
+            container.addEventListener('mouseout', function(){
+                if (!isExpanded) {  // 확대된 상태가 아니면 초기화
+                     overlay.style = 'filter : opacity(0)';
+                     container.style = 'transform : perspective(350px) rotateY(0deg) rotateX(0deg)';
+                }
+            });
+
+            // 카드 클릭 시 확대
+            container.addEventListener('click', function(e) {
+                    if (!isExpanded) {  // 확대되지 않은 상태에서만 확대
+                        isExpanded = true;
+
+                        //expandedCard = container;
+
+                        // 카드 복제
+                        const clonedCard = container.cloneNode(true);
+                        document.body.appendChild(clonedCard);
+
+                        // 복제된 카드에 스타일 적용
+                        clonedCard.style.position = 'fixed';
+                        clonedCard.style.top = '50%';
+                        clonedCard.style.left = '50%';
+                        clonedCard.style.transform = 'translate(-50%, -50%) scale(2)';
+                        clonedCard.style.zIndex = '1000';  // 다른 요소 위로 배치
+                        clonedCard.style.cursor = 'default';  // 클릭 불가로 변경
+
+                        // 복제된 카드 클릭 시 닫기
+                        clonedCard.addEventListener('click', function() {
+                            document.body.removeChild(clonedCard);
+                            isExpanded = false;
+                        });
+                    }
+                });
+            });
+
+            // *****************************************************************************************
+            let selectedCards = []; // 선택된 카드 추적 배열
+            const boxes = document.querySelectorAll('.deckbox .box'); // 모든 .box 요소 가져오기
+            let currentBoxIndex = 0; // 다음에 카드를 넣을 박스의 인덱스
+
+            const deckbox = document.querySelector('.deckbox'); // .deckbox 컨테이너
+
+            // 모든 컨테이너에 클릭 이벤트 리스너 추가
+            document.querySelectorAll('.container').forEach(function(container) {
+                container.addEventListener('click', function(e) {
+                    // ctrl 키를 눌렀을 때만 카드 선택
+                    if (e.ctrlKey) {
+                        e.stopPropagation(); // 클릭 이벤트 전파 방지
+                        if (currentBoxIndex < boxes.length) {
+                        // 선택한 카드를 복제하여 움직임 스타일 제거 후 box에 추가
+                        const clonedCard = container.cloneNode(true);
+                        clonedCard.style.transform = ''; // 움직임 초기화
+                        clonedCard.style.position = 'static';  // 고정된 위치로 설정
+                        clonedCard.style.cursor = 'pointer'; // 마우스 포인터 설정
+
+                        // box에 카드 추가
+                        boxes[currentBoxIndex].appendChild(clonedCard);
+                        selectedCards[currentBoxIndex] = clonedCard; // 선택된 카드 배열에 추가
+                        currentBoxIndex++;
+                        } else {
+                            alert('더 이상 카드를 추가할 수 없습니다.');
+                        }
+                    }
+                });
+            });
+
+            // 선택된 카드 취소 기능 추가
+            function addBoxClickListener(box, index) {
+                box.addEventListener('click', function() {
+                    if (box.firstChild) {
+                        box.removeChild(box.firstChild); // 카드 제거
+                        selectedCards[index] = null; // 배열에서 카드 제거
+                        currentBoxIndex = index; // 다음 추가 위치를 제거된 위치로 조정
+                    }
+                });
+            }
+
+             // 기본 .box 요소에 클릭 이벤트 리스너 추가
+             boxes.forEach((box, index) => addBoxClickListener(box, index));
+
+            // Reset 버튼 이벤트
+            document.getElementById('reset-button').addEventListener('click', function() {
+                boxes.forEach((box, index) => {
+                    if (box.firstChild) {
+                        box.removeChild(box.firstChild); // 모든 카드 제거
+                    }
+                    selectedCards[index] = null; // 배열 초기화
+                });
+                currentBoxIndex = 0; // 인덱스 초기화
+            });
+        </script>
+    </body>
+</html>
+

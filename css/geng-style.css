@@ -1,0 +1,285 @@
+@charset "UTF-8";
+@import url(font.css);
+
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #f7f7f7; /* 밝은 배경 */
+    color: #333; /* 기본 텍스트 색상 */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* @@@@@@상단 메뉴바 스타일@@@@@@ */
+/* 상위 메뉴 스타일 */
+#menu-items, #left-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* 상단 메뉴 */
+#menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gold; /* 메인 색상 */
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+#logo img {
+    height: 50px; /* 로고 이미지 크기 */
+}
+
+#menu-items {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#menu-items a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+#menu-items li, #left-menu li {
+    list-style: none;
+    position: relative;
+}
+
+#menu-items li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#menu-items li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* @@@@@@검색창과 메뉴 스타일@@@@@@ */
+/* 홈 메뉴 */
+#menu-bar2 {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* @@@@@@상위 메뉴 스타일@@@@@@ */
+#left-menu {
+    position: relative;
+    z-index: 10; /* 상위 메뉴를 다른 요소보다 위로 */
+}
+
+#left-menu > li > a {
+    color: #333;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+/* 상위 메뉴 마우스 오버 시 효과 */
+#left-menu > li > a:hover {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+#left-menu > li > a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px; /* 밑줄 두께 */
+    background: goldenrod; /* 밑줄 색상 */
+    transition: width 0.3s;
+}
+
+#left-menu a:hover::after {
+    width: 100%;
+}
+
+/* 하위 메뉴 컨테이너 스타일 */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* 상위 메뉴 바로 아래 */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* 검정색 불투명 */
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    width: auto;
+    padding: 10px 0;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+    visibility: hidden; /* 초기 상태 */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    width: 100%; /* 전체 너비 사용 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    transition: none; /* 하위 메뉴에선 효과 없음 */
+}
+
+/* 하위 메뉴 마우스 오버 시 효과 제거 */
+.submenu a:hover {
+    color: #fff; /* 텍스트 색상 유지 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+
+/* 마우스를 올릴 때 하위 메뉴 보이기 */
+#left-menu li:hover .submenu {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 헤더 및 다른 요소가 가리지 않게 설정 */
+#top, #header {
+    position: relative;
+    z-index: 5;
+}
+
+/* @@@@@@헤더 스타일@@@@@@ */
+#header {
+    text-align: center;
+    padding: 0;
+    z-index: 4;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #fff8e1;
+    color: goldenrod;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.roster {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 70%;
+}
+
+.card {
+    width: 180px;
+    height: 260px;
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.profile-display {
+    width: 30%;
+    padding: 1rem;
+    background-color: #fff8e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px; /* 고정된 높이 설정 */
+    overflow-y: auto; /* 내용이 넘치면 세로로 스크롤 추가 */
+    box-sizing: border-box;
+}
+
+/* 스크롤바 디자인 */
+.profile-display::-webkit-scrollbar {
+    width: 8px; /* 스크롤바의 너비 */
+}
+
+/* 스크롤바 트랙(배경) */
+.profile-display::-webkit-scrollbar-track {
+    background: #f1f1f1; /* 밝은 회색 */
+    border-radius: 10px; /* 트랙에 둥근 모서리 */
+}
+
+/* 스크롤바 핸들(움직이는 부분) */
+.profile-display::-webkit-scrollbar-thumb {
+    background-color: goldenrod; /* 황금색 */
+    border-radius: 10px; /* 둥근 모서리 */
+    border: 2px solid #f1f1f1; /* 트랙과의 경계선 */
+}
+
+/* 스크롤바 핸들에 마우스 오버시 색상 변화 */
+.profile-display::-webkit-scrollbar-thumb:hover {
+    background-color: #e5c100; /* 살짝 어두운 색으로 변경 */
+}
+
+/* 스크롤바에 마우스를 올렸을 때의 효과 */
+.profile-display::-webkit-scrollbar:hover {
+    width: 12px; /* 마우스 오버시 스크롤바가 조금 더 두꺼워짐 */
+}
+
+.profile-display h2 {
+    font-size: 1.5rem;
+    color: goldenrod;
+    margin-bottom: 1rem;
+}
+
+.profile-display p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
